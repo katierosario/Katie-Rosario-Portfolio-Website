@@ -1,0 +1,334 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A54F901B-B66B-4299-9744-ABD11BC7DA07}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Katie_Rosario_Portfolio_Website</RootNamespace>
+    <AssemblyName>Katie Rosario Portfolio Website</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44308</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="assets\bootstrap\css\bootstrap.css" />
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\js\bootstrap.js" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\blueimp-gallery.min.css" />
+    <Content Include="assets\css\et-line.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\ionicons.css" />
+    <Content Include="assets\css\ionicons.min.css" />
+    <Content Include="assets\css\linea-arrows.css" />
+    <Content Include="assets\css\linea-icons.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\owl.carousel.css" />
+    <Content Include="assets\css\pace-theme-minimal.css" />
+    <Content Include="assets\css\prism.css" />
+    <Content Include="assets\css\template-alizarin.css" />
+    <Content Include="assets\css\template-alizarin.min.css" />
+    <Content Include="assets\css\template-blue.css" />
+    <Content Include="assets\css\template-blue.min.css" />
+    <Content Include="assets\css\template-brown.css" />
+    <Content Include="assets\css\template-brown.min.css" />
+    <Content Include="assets\css\template-concrete.css" />
+    <Content Include="assets\css\template-concrete.min.css" />
+    <Content Include="assets\css\template-cyan.css" />
+    <Content Include="assets\css\template-cyan.min.css" />
+    <Content Include="assets\css\template-deep-purple.css" />
+    <Content Include="assets\css\template-deep-purple.min.css" />
+    <Content Include="assets\css\template-emerald.css" />
+    <Content Include="assets\css\template-emerald.min.css" />
+    <Content Include="assets\css\template-green.css" />
+    <Content Include="assets\css\template-green.min.css" />
+    <Content Include="assets\css\template-lime.css" />
+    <Content Include="assets\css\template-lime.min.css" />
+    <Content Include="assets\css\template-orange.css" />
+    <Content Include="assets\css\template-orange.min.css" />
+    <Content Include="assets\css\template.css" />
+    <Content Include="assets\css\template.min.css" />
+    <Content Include="assets\css\themify-icons.css" />
+    <Content Include="assets\css\vertical.css" />
+    <Content Include="assets\css\vertical.min.css" />
+    <Content Include="assets\fonts\et-line.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\ionicons.svg" />
+    <Content Include="assets\fonts\linea-arrows-10.svg" />
+    <Content Include="assets\fonts\linea-basic-10.svg" />
+    <Content Include="assets\fonts\themify.svg" />
+    <Content Include="assets\images\apple-touch-icon-114x114.png" />
+    <Content Include="assets\images\apple-touch-icon-72x72.png" />
+    <Content Include="assets\images\apple-touch-icon.png" />
+    <Content Include="assets\images\avatar\1.jpg" />
+    <Content Include="assets\images\avatar\2.jpg" />
+    <Content Include="assets\images\avatar\3.jpg" />
+    <Content Include="assets\images\avatar\4.jpg" />
+    <Content Include="assets\images\blog\1.jpg" />
+    <Content Include="assets\images\blog\2.jpg" />
+    <Content Include="assets\images\blog\3.jpg" />
+    <Content Include="assets\images\blog\4.jpg" />
+    <Content Include="assets\images\blog\5.jpg" />
+    <Content Include="assets\images\blog\6.jpg" />
+    <Content Include="assets\images\blog\7.jpg" />
+    <Content Include="assets\images\clients\logo-1.png" />
+    <Content Include="assets\images\clients\logo-2.png" />
+    <Content Include="assets\images\clients\logo-3.png" />
+    <Content Include="assets\images\clients\logo-4.png" />
+    <Content Include="assets\images\close.png" />
+    <Content Include="assets\images\codingchallenges\fizzbuzz_header800lgmodal.jpg" />
+    <Content Include="assets\images\codingchallenges\g-1.jpg" />
+    <Content Include="assets\images\codingchallenges\g-2.jpg" />
+    <Content Include="assets\images\codingchallenges\g-3.jpg" />
+    <Content Include="assets\images\codingchallenges\g-4.jpg" />
+    <Content Include="assets\images\codingchallenges\g-5.jpg" />
+    <Content Include="assets\images\codingchallenges\s-1.jpeg" />
+    <Content Include="assets\images\codingchallenges\s-2.jpeg" />
+    <Content Include="assets\images\codingchallenges\s-3.jpeg" />
+    <Content Include="assets\images\codingchallenges\s-4.jpeg" />
+    <Content Include="assets\images\codingchallenges\s-5.jpg" />
+    <Content Include="assets\images\codingchallenges\s-6.jpg" />
+    <Content Include="assets\images\codingchallenges\s-7.jpg" />
+    <Content Include="assets\images\codingchallenges\s-8.jpg" />
+    <Content Include="assets\images\demo\1.jpg" />
+    <Content Include="assets\images\demo\10.jpg" />
+    <Content Include="assets\images\demo\11.jpg" />
+    <Content Include="assets\images\demo\12.jpg" />
+    <Content Include="assets\images\demo\13.jpg" />
+    <Content Include="assets\images\demo\14.jpg" />
+    <Content Include="assets\images\demo\15.jpg" />
+    <Content Include="assets\images\demo\2.jpg" />
+    <Content Include="assets\images\demo\21.jpg" />
+    <Content Include="assets\images\demo\22.jpg" />
+    <Content Include="assets\images\demo\3.jpg" />
+    <Content Include="assets\images\demo\4.jpg" />
+    <Content Include="assets\images\demo\5.jpg" />
+    <Content Include="assets\images\demo\6.jpg" />
+    <Content Include="assets\images\demo\7.jpg" />
+    <Content Include="assets\images\demo\8.jpg" />
+    <Content Include="assets\images\dot.gif" />
+    <Content Include="assets\images\favicon.png" />
+    <Content Include="assets\images\features\1.jpg" />
+    <Content Include="assets\images\features\2.jpg" />
+    <Content Include="assets\images\features\3.jpg" />
+    <Content Include="assets\images\features\4.jpg" />
+    <Content Include="assets\images\features\flagler.jpg" />
+    <Content Include="assets\images\fizzbuzz_icon.jpg" />
+    <Content Include="assets\images\grabbing.png" />
+    <Content Include="assets\images\headshot.jpg" />
+    <Content Include="assets\images\home_photo.jpg" />
+    <Content Include="assets\images\im.jpg" />
+    <Content Include="assets\images\iphone-5.png" />
+    <Content Include="assets\images\logo-light.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\map-icon.png" />
+    <Content Include="assets\images\module-1.jpg" />
+    <Content Include="assets\images\module-10.jpg" />
+    <Content Include="assets\images\module-11.jpg" />
+    <Content Include="assets\images\module-12.jpg" />
+    <Content Include="assets\images\module-13.jpg" />
+    <Content Include="assets\images\module-14.jpg" />
+    <Content Include="assets\images\module-15.jpg" />
+    <Content Include="assets\images\module-2.jpg" />
+    <Content Include="assets\images\module-3.jpg" />
+    <Content Include="assets\images\module-4.jpg" />
+    <Content Include="assets\images\module-5.jpg" />
+    <Content Include="assets\images\module-6.jpg" />
+    <Content Include="assets\images\module-7.jpg" />
+    <Content Include="assets\images\module-8.jpg" />
+    <Content Include="assets\images\module-9.jpg" />
+    <Content Include="assets\images\programs.png" />
+    <Content Include="assets\images\sumofallfears_header800.jpg" />
+    <Content Include="assets\images\sumofallfears_icon.jpg" />
+    <Content Include="assets\images\sunsethills_icon.jpg" />
+    <Content Include="assets\images\tacocat_icon.jpg" />
+    <Content Include="assets\images\text.png" />
+    <Content Include="assets\images\widgets\1.jpg" />
+    <Content Include="assets\images\widgets\2.jpg" />
+    <Content Include="assets\images\widgets\3.jpg" />
+    <Content Include="assets\images\widgets\4.jpg" />
+    <Content Include="assets\images\widgets\5.jpg" />
+    <Content Include="assets\images\widgets\6.jpg" />
+    <Content Include="assets\images\widgets\7.jpg" />
+    <Content Include="assets\images\widgets\8.jpg" />
+    <Content Include="assets\images\widgets\9.jpg" />
+    <Content Include="assets\js\appear.js" />
+    <Content Include="assets\js\contact.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\custom.min.js" />
+    <Content Include="assets\js\gmap3.js" />
+    <Content Include="assets\js\imagesloaded.pkgd.js" />
+    <Content Include="assets\js\isotope.pkgd.js" />
+    <Content Include="assets\js\jarallax-video.js" />
+    <Content Include="assets\js\jarallax.js" />
+    <Content Include="assets\js\jqBootstrapValidation.js" />
+    <Content Include="assets\js\jquery-2.2.4.js" />
+    <Content Include="assets\js\jquery-2.2.4.min.js" />
+    <Content Include="assets\js\jquery.easypiechart.js" />
+    <Content Include="assets\js\jquery.fitvids.js" />
+    <Content Include="assets\js\jquery.magnific-popup.js" />
+    <Content Include="assets\js\jquery.simple-text-rotator.js" />
+    <Content Include="assets\js\jquery.singlePageNav.js" />
+    <Content Include="assets\js\jquery.superslides.js" />
+    <Content Include="assets\js\owl.carousel.js" />
+    <Content Include="assets\js\plugins.js" />
+    <Content Include="assets\js\plugins.min.js" />
+    <Content Include="assets\js\prism.js" />
+    <Content Include="assets\js\ReverseString.js" />
+    <Content Include="assets\js\style-switcher.js" />
+    <Content Include="assets\js\style-switcher.min.js" />
+    <Content Include="assets\js\submenu-fix.js" />
+    <Content Include="assets\js\SunsetHills.js" />
+    <Content Include="assets\js\tilt.jquery.js" />
+    <Content Include="assets\js\twitterFetcher.js" />
+    <Content Include="assets\js\typed.js" />
+    <Content Include="assets\js\wow.js" />
+    <Content Include="assets\php\contact.php" />
+    <Content Include="assets\video\video.jpg" />
+    <Content Include="assets\video\video.mp4" />
+    <Content Include="assets\video\video.ogv" />
+    <Content Include="assets\video\video.webm" />
+    <Content Include="Index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="assets\fonts\et-line.eot" />
+    <Content Include="assets\fonts\et-line.ttf" />
+    <Content Include="assets\fonts\et-line.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\ionicons.eot" />
+    <Content Include="assets\fonts\ionicons.ttf" />
+    <Content Include="assets\fonts\ionicons.woff" />
+    <Content Include="assets\fonts\linea-arrows-10.eot" />
+    <Content Include="assets\fonts\linea-arrows-10.ttf" />
+    <Content Include="assets\fonts\linea-arrows-10.woff" />
+    <Content Include="assets\fonts\linea-basic-10.eot" />
+    <Content Include="assets\fonts\linea-basic-10.ttf" />
+    <Content Include="assets\fonts\linea-basic-10.woff" />
+    <Content Include="assets\fonts\themify.eot" />
+    <Content Include="assets\fonts\themify.ttf" />
+    <Content Include="assets\fonts\themify.woff" />
+    <Content Include="assets\images\icons_template.psd" />
+    <Content Include="assets\images\Thumbs.db" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53706</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44308/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
