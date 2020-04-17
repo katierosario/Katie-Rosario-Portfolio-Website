@@ -16,7 +16,8 @@
     <!-- Bootstrap core CSS-->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Icon Fonts-->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/et-line.css" rel="stylesheet">
     <!-- Plugins-->
@@ -26,7 +27,9 @@
     <link href="assets/css/animate.css" rel="stylesheet">
     <!-- Template core CSS-->
     <link href="assets/css/template.css" rel="stylesheet">
-    <link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/prism (1).css" rel="stylesheet" />
+
+
 </head>
 <body>
 
@@ -413,13 +416,13 @@
                             </li>
                             <div class="timeline-top"></div>
                         </ul>
-                        <div class="text-center"><a class="btn btn-lg btn-gray" href="/images/Katie_Rosario_Resume_2018.pdf"/a><span>Download Resume</span></a></div>
+                        <div class="text-center"><a class="btn btn-lg btn-gray" target="_blank"><span>Download Resume</span></a></div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Resume end-->
-         <!--Clients and Testimonials
+        <!--Clients and Testimonials
         <section class="module module-dark">
             <div class="container">
 
@@ -488,7 +491,7 @@
             </div>
         </section>
          Clients and Testimonials end-->
-         <!--Posts
+        <!--Posts
         <section class="module module-gray" id="blog">
             <div class="container">
                 <div class="row blog-grid" style="margin-top: -200px;">
@@ -570,7 +573,7 @@
                     <div class="col-md-12">
                         <div class="m-title c-align">
                             <h2>Let's Connect</h2>
-                            <h6>Drop me a line</h6>
+                            <h6>Drop me a line or email me at katieliz@gmail.com</h6>
                         </div>
                     </div>
                 </div>
@@ -614,8 +617,8 @@
                     <div class="col-md-6"><span class="copyright">© 2020 <a href="#">Katie Rosario</a>, All Rights Reserved.</span></div>
                     <div class="col-md-6">
                         <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/katie-rosario/"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="https://github.com/katierosario"><i class="fa fa-github-square"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -726,42 +729,42 @@
                             <div class="col text-center">
                                 <div id="hillsCode">
                                     <pre>
-                                    <code class="language-css">
-                                             $("#sunonbuildings").on("click", function () {
+                    <code class="language-js">
+$("#sunonbuildings").on("click", function () {
 
-                                                 let myArray = new Array();
-                                                 myArray.push(Number($("#building1").val()));
-                                                 myArray.push(Number($("#building2").val()));
-                                                 myArray.push(Number($("#building3").val()));
-                                                 myArray.push(Number($("#building4").val()));
-                                                 myArray.push(Number($("#building5").val()));
-                                                 myArray.push(Number($("#building6").val()));
+let myArray = new Array();
+myArray.push(Number($("#building1").val()));
+myArray.push(Number($("#building2").val()));
+myArray.push(Number($("#building3").val()));
+myArray.push(Number($("#building4").val()));
+myArray.push(Number($("#building5").val()));
+myArray.push(Number($("#building6").val()));
 
-                                                 let tallest = myArray[0]
+let tallest = myArray[0]
 
-                                                 let newArray = new Array();
-                                                 newArray.push(tallest);
-                                                 for (var index = 1; index < myArray.length; index++) {
-                                                     if (myArray[index] > tallest) {
-                                                         tallest = myArray[index];
-                                                         newArray.push(tallest);
+let newArray = new Array();
+newArray.push(tallest);
+for (var index = 1; index < myArray.length; index++) {
+    if (myArray[index] > tallest) {
+        tallest = myArray[index];
+        newArray.push(tallest);
 
-                                                     }
+    }
 
-                                                 }
+}
 
-                                                 $("#hillsOutput").html(`The buildings that can see the sunset are ${newArray.join(", ")}`);
-                                             });
+$("#hillsOutput").html(`The buildings that can see the sunset are ${newArray.join(", ")}`);
+});
 
-                                             $("#clearHills").on("click", function () {
-                                                 $('#hillsInput1, ").val("");
-                                                 $("#hillsOutput").text("");
+$("#clearHills").on("click", function () {
+$('#hillsInput1, ").val("");
+$("#hillsOutput").text("");
 
-                                             });
+});
 
-                                             $('#btnShowHillscode").on("click", function (){
+$('#btnShowHillscode").on("click", function (){
 
-                                             }
+}
 
                                         </code>
                                     </pre>
@@ -780,42 +783,56 @@
     <div class="modal module-gray modal fade" id="sumofAllFears">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" type="button" data-dismiss="modal">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                 </button>
                 <div class="modal-body text-center">
 
                     <div class="container">
                         <div class="row">
-                            <img src="assets/images/sumofallfears_header800.jpg" class="responsive" />
-                            <div class="col text-center h5">
-                                Given a list of numbers and a number "K", return whether any two numbers
-                                from the list add up to "K".
+                            <div class="col-12">
+                                <img src="assets/images/sumofallfears_header800.jpg" class="responsive">
                             </div>
                         </div>
                         <br />
-                            <div class="col">
-                                <label><span>ENTER A NUMBER:</span><input id="k" type="text" name="sum"></label>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="btn btn-gray" id="btnSumFears">Calculate</div>
-                                        <label><span></span></label><br />
-                                    </div>
-                                </div>
-                                <!--<label><span></span><input type="submit" onclick="displaySum()" value="Find It"></label>-->
-                                    <div class="row">
-                                        <div class="col">
-                                            <span>NUMBERS TO SEARCH</span>
-                                            <div id="numList">[10, 15, 3, 7]</div>
-                                        </div>
-                                    </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <br><br><span>RESULTS!</span><br>
-                                        <p id="results"></p>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col text-center h4">
+                                Given a list of numbers and the number K, <br />
+                                return whether numbers are equal to K.
                             </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col text-center h5">
+                                <label><span>ENTER A NUMBER for "K":  </span><input id="findSum" type="number" name="sum" value="17"></label>
+                                <label><span></span><input type="submit" onclick="displaySum()" value="Find It"></label>
+                                <label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center h4">
+                                <span>NUMBERS TO SEARCH</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center h5">
+                                <div id="numList">---</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center h4">
+                                <label>
+                                    <br><br><span>RESULTS!</span><br>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center h5">
+                                <p id="results"></p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -833,9 +850,12 @@
                 <div class="modal-body text-center">
 
                     <div class="container">
-                        <!--<div class="row">
-                            <img src="fizzbuzz_header800lgmodal.jpg" class="responsive">
-                        </div>-->
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="assets/images/fizzbuzz_header800px.jpg" class="responsive"/>
+                            </div>
+                        </div>
+                        <br />
                         <div class="row">
                             <div class="col text-center h3">Multiples of 3 print Fizz, multiples of 5 print Buzz, multiples of 3 & 5 print FIZZBUZZ</div>
                         </div>
@@ -853,7 +873,7 @@
 
                         <div class="row">
                             <div class="col">
-                                <div class="btn btn-gray" id="buzzIt">Buzz It</div>
+                                <label><span></span><input class="btn btn-gray" onclick="buzzIt()" type="submit" value="Try It" /></label>
                                 <label><span></span></label><br />
                             </div>
 
@@ -862,7 +882,7 @@
                         <div class="row">
                             <div class="col">
                                 <label><span>RESULTS:</span></label><br />
-                                <p id="output"></p>
+                                <p id="FizzBuzzresults"></p>
                             </div>
                         </div>
 
@@ -885,7 +905,7 @@
     <script src="assets/js/SunsetHills.js"></script>
     <script src="assets/js/findSum.js"></script>
     <script src="assets/js/FizzBuzz.js"></script>
-    <script src="assets/js/prism.js" data-manual></script>
+    <script src="assets/js/prism (1).js"></script>
 
     <!-- Scripts-->
 

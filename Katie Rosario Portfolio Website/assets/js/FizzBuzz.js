@@ -2,7 +2,7 @@
     let returnValue = "";
     for (let i = 1; i <= 100; i++) {
         if (i % value1 == 0 && i % value2 == 0) {
-            returnValue += 'FizzBuzz ';
+            returnValue += '<span class="FizzBuzz">FizzBuzz </span>';
         }
         else if (i % value1 == 0) {
             returnValue += 'Fizz ';
@@ -17,10 +17,11 @@
     return returnValue;
 }
 
+//Call and use it
 function buzzIt() {
     let output = "";
-    let val1 = document.getElementById('Fizzvalue').value;
-    let val2 = document.getElementById('Buzzvalue').value;
-    output = FizzBuzzA(val1, val2);
-    document.getElementById('results').innerHTML = output;
+    let value1 = document.getElementById('Fizzvalue').value;
+    let value2 = document.getElementById('Buzzvalue').value;
+    output = FizzBuzzA(value1, value2);
+    document.getElementById('FizzBuzzresults').innerHTML = output;
 }

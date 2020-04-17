@@ -28,10 +28,10 @@ $("#sunonbuildings").on("click", function () {
 
 $("#showBtn").on("click", function () {
     $("#hillsCode").toggle();
-    if ($(this).text() == "Show Code") {
-        $(this).text("Hide Code");
+    if ($(this).text() == "Hide Code") {
+        $(this).text("Show Code");
     } else {
-        $(this).text("Show Code")
+        $(this).text("Hide Code")
     };
 });
 
