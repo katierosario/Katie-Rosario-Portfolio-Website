@@ -26,8 +26,6 @@
     <link href="assets/css/animate.css" rel="stylesheet">
     <!-- Template core CSS-->
     <link href="assets/css/template.css" rel="stylesheet">
-    <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
-    <link href="Content/SyntaxHighlighter/shCoreMidnight.css" rel="stylesheet" />
     <link href="assets/css/prism.css" rel="stylesheet" />
 </head>
 <body>
@@ -133,50 +131,6 @@
             </div>
         </section>
         <!-- Profile end-->
-        <!-- Counters-->
-        <section class="module module-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="counter">
-                            <div class="counter-icon"><span class="icon-telescope"></span></div>
-                            <h5 class="counter-number">
-                                <div class="counter-timer" data-from="0" data-to="785">0</div>
-                            </h5>
-                            <h5 class="counter-title">Pixels Pushed</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="counter">
-                            <div class="counter-icon"><span class="icon-strategy"></span></div>
-                            <h5 class="counter-number">
-                                <div class="counter-timer" data-from="0" data-to="4017">0</div>
-                            </h5>
-                            <h5 class="counter-title">Cups of Coffee</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="counter">
-                            <div class="counter-icon"><span class="icon-circle-compass"></span></div>
-                            <h5 class="counter-number">
-                                <div class="counter-timer" data-from="0" data-to="546">0</div>
-                            </h5>
-                            <h5 class="counter-title">Awards Won</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="counter">
-                            <div class="counter-icon"><span class="icon-global"></span></div>
-                            <h5 class="counter-number">
-                                <div class="counter-timer" data-from="0" data-to="468">0</div>
-                            </h5>
-                            <h5 class="counter-title">Theme Users</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Counters end-->
         <!-- Portfolio-->
         <section class="module p-b-0" id="portfolio">
             <div class="container">
@@ -675,28 +629,42 @@
     <!-- Wrapper end-->
     <!-- Models -->
     <!-- Taco Cat Modal -->
-    <div class="modal" id="tacoCat">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col text-center h3">Taco Cat Challenge</div>
-
-                    </div>
-                    <div class="col">
-                        <button class="btn btn-primary" id="buttonreverse">TACOCAT</button>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h4>Enter a String to Reverse</h4>
-                            <input id="reverse">
-                            <p id="reversed"></p><input type="checkbox" id="isPalindrome" />
+    <div class="modal module-gray modal fade" id="tacoCat">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col text-center h3">Taco Cat Challenge</div>
                         </div>
+                        <div class="row">
+                            <div class="col text-center h6">
+                                <h4>Enter a String to Reverse</h4>
+                                <input id="reverse">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button class="btn btn-gray" id="buttonreverse">TACOCAT</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <p id="reversed"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <input type="checkbox" id="isPalindrome" />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Sunset Hills Modal -->
     <div class="modal module-gray modal fade" id="sunsetHills">
@@ -713,41 +681,35 @@
                         </div>
                         <br />
 
-                        <div class="row">
+                        <div class="row h6">
                             <div class="col-2">
-                                <input id="buiding1" type="number" />
-                                <div class="col-2 xs-2 text-center h6 form-control clearMe numOnly">Building 1</div>
+                                <input id="building1" type="text" class="form-control" placeholder="Enter Building 1" />
                             </div>
                             <div class="col-2">
-                                <input id="building2" type="number" />
-                                <div class="col-2 xs-2 text-center h6 form-control clearMe numOnly">Building 2</div>
+                                <input id="building2" type="text" class="form-control" placeholder="Enter Building 2" />
                             </div>
                             <div class="col-2">
-                                <input id="building3" type="number" />
-                                <div class="col-2 xs-2 text-center h6 form-control clearMe numOnly">Building 3</div>
+                                <input id="building3" type="text" class="form-control" placeholder="Enter Building 3" />
                             </div>
                             <div class="col-2">
-                                <input id="building4" type="number" />
-                                <div class="col-2 xs-2 text-center h6 form-control clearMe numOnly">Building 4</div>
+                                <input id="building4" type="text" class="form-control" placeholder="Enter Building 4" />
                             </div>
                             <div class="col-2">
-                                <input id="building5" type="number" />
-                                <div class="co-2 xs-2 text-center h6 form-control clearMe numOnly">Building 5</div>
+                                <input id="building5" type="text" class="form-control" placeholder="Enter Building 5" />
                             </div>
                             <div class="col-2">
-                                <input id="building6" type="number" />
-                                <div class="col-2 xs-2 text-center h6 form-control clearMe numOnly">Building 6</div>
+                                <input id="building6" type="text" class="form-control" placeholder="Enter Building 6" />
                             </div>
                         </div>
                         <br />
 
                         <div class="row">
                             <div class="col">
-                                <div class="btn btn-gray" id="btnsunonbuildings">Calculate</div>
+                                <div class="btn btn-gray" id="sunonbuildings">Calculate</div>
                                 <label><span></span></label><br />
                             </div>
                             <div class="col">
-                                <div class="btn btn-gray" id="btnshowHillsCode">See My Code</div>
+                                <div class="btn btn-gray" id="showBtn">See My Code</div>
                                 <label><span></span></label><br />
                             </div>
                             <div class="col">
@@ -765,8 +727,9 @@
 
                         <div class="row">
                             <div class="col text-center">
-                                <div id="hillsCode"></div>
-                                <pre><code class="language-css">
+                                <div id="hillsCode">
+                                    <pre>
+                                    <code class="language-css">
                                              $("#sunonbuildings").on("click", function () {
 
                                                  let myArray = new Array();
@@ -803,8 +766,9 @@
 
                                              }
 
-                                    </code>
-                                </pre>
+                                        </code>
+                                    </pre>
+                                </div>
                             </div>
                         </div>
 
@@ -833,30 +797,28 @@
                             </div>
                         </div>
                         <br />
-
-                        <div class="row">
                             <div class="col">
-                                <label><span>ENTER A NUMBER:</span><input id="findSum" type="number" name="sum" value="17"></label>
+                                <label><span>ENTER A NUMBER:</span><input id="k" type="text" name="sum"></label>
                                 <div class="row">
-                                    <div class="btn btn-gray" id="displaySum">Find It</div>
-                                    <label><span></span></label><br />
-                                    <!--<p id="displaySum"></p>-->
+                                    <div class="col">
+                                        <div class="btn btn-gray" id="btnSumFears">Calculate</div>
+                                        <label><span></span></label><br />
+                                    </div>
                                 </div>
                                 <!--<label><span></span><input type="submit" onclick="displaySum()" value="Find It"></label>-->
-                                <label>
                                     <div class="row">
                                         <div class="col">
                                             <span>NUMBERS TO SEARCH</span>
                                             <div id="numList">[10, 15, 3, 7]</div>
                                         </div>
                                     </div>
-                                </label>
-                                <label>
-                                    <br><br><span>RESULTS!</span><br>
-                                    <p id="results"></p>
-                                </label>
+                                <div class="row">
+                                    <div class="col">
+                                        <br><br><span>RESULTS!</span><br>
+                                        <p id="results"></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -919,16 +881,14 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/custom.min.js"></script>
-    <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
+
     <!-- Color Switcher (Remove these lines)-->
     <script src="assets/js/style-switcher.min.js"></script>
     <script src="assets/js/ReverseString.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="assets/js/SunsetHills.js"></script>
     <script src="assets/js/findSum.js"></script>
     <script src="assets/js/FizzBuzz.js"></script>
-    <script src="prism.js" data-manual></script>
-
+    <script src="assets/js/prism.js" data-manual></script>
 
     <!-- Scripts-->
 

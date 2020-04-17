@@ -1,6 +1,4 @@
-﻿<script>
-
-
+﻿
 $("#sunonbuildings").on("click", function () {
 
     let myArray = new Array();
@@ -25,16 +23,25 @@ $("#sunonbuildings").on("click", function () {
     }
 
     $("#hillsOutput").html(`The buildings that can see the sunset are ${newArray.join(", ")}`);
-    });
-
-    $("#clearHills").on("click", function () {
-        $('#hillsInput1, ").val("");
-        $("#hillsOutput").text("");
-
-    });
-
-    $('#btnShowHillscode").on("click", function (){
+});
 
 
-    }
-</script>
+$("#showBtn").on("click", function () {
+    $("#hillsCode").toggle();
+    if ($(this).text() == "Show Code") {
+        $(this).text("Hide Code");
+    } else {
+        $(this).text("Show Code")
+    };
+});
+
+$(function () {
+    //use jquery to hide the code block
+    $("#hillsCode").hide();
+});
+
+$("#btnclearHills").on("click", function () {
+    $("#building1, #building2, #building3, #building4, #building5, #building6").val("");
+    $("#hillsOutput").html("");
+    $("#hillsCode").hide();
+});

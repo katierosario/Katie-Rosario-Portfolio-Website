@@ -218,6 +218,8 @@
     <Content Include="assets\js\contact.js" />
     <Content Include="assets\js\custom.js" />
     <Content Include="assets\js\custom.min.js" />
+    <Content Include="assets\js\findSum.js" />
+    <Content Include="assets\js\FizzBuzz.js" />
     <Content Include="assets\js\gmap3.js" />
     <Content Include="assets\js\imagesloaded.pkgd.js" />
     <Content Include="assets\js\isotope.pkgd.js" />
@@ -286,6 +288,7 @@
     <Content Include="assets\images\icons_template.psd" />
     <Content Include="assets\images\Thumbs.db" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\KatieRosarioPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
