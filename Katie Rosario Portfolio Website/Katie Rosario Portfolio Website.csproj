@@ -214,6 +214,7 @@
     <Content Include="assets\images\widgets\7.jpg" />
     <Content Include="assets\images\widgets\8.jpg" />
     <Content Include="assets\images\widgets\9.jpg" />
+    <Content Include="assets\images\work.png" />
     <Content Include="assets\js\appear.js" />
     <Content Include="assets\js\contact.js" />
     <Content Include="assets\js\custom.js" />
@@ -287,6 +288,7 @@
     <Content Include="assets\fonts\themify.woff" />
     <Content Include="assets\images\icons_template.psd" />
     <Content Include="assets\images\Thumbs.db" />
+    <Content Include="assets\images\Katie_Rosario_Resume_2018.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\KatieRosarioPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
