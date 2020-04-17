@@ -75,6 +75,7 @@
     <Content Include="assets\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets\bootstrap\js\bootstrap.js" />
     <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\images\bugtracker.jpg" />
     <Content Include="assets\css\animate.css" />
     <Content Include="assets\css\blueimp-gallery.min.css" />
     <Content Include="assets\css\et-line.css" />
