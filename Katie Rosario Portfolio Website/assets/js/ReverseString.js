@@ -9,13 +9,18 @@ $("#tacoCat").on("click", function () {
     $("#reversed").html(reversedstr);
 
     if (str == reversedstr) {
-        alert(str + " is a palidrome");
-        $("#isPalindrome").prop("checked", true);
+        swal({
+            title: "Yay!",
+            text: `${str} is a palindrome!`,
+            icon: "success",
+        });
     } else {
-        alert(str + " is not a palidrome");
-        $("#isPalindrome").prop("checked", false);
+        swal({
+            title: "Nope!",
+            text: `${str} is a not palindrome.`,
+            icon: "error"
+        });
     }
-
 
 });
 

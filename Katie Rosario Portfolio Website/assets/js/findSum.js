@@ -28,3 +28,20 @@ function displaySum() {
     document.getElementById("results").innerHTML = found.toString();
 
 }
+
+
+
+$("#showBtnsum").on("click", function () {
+    $("#sumCode").toggle();
+    if ($(this).text() == "Hide Code") {
+        $(this).text("Show Code");
+    } else {
+        $(this).text("Hide Code")
+    };
+});
+
+
+$(function () {
+    //use jquery to hide the code block
+    $("#sumCode").hide();
+});

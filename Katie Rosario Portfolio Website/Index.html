@@ -28,8 +28,8 @@
     <!-- Template core CSS-->
     <link href="assets/css/template.css" rel="stylesheet">
     <link href="assets/css/prism (1).css" rel="stylesheet" />
-
-
+    <link href="assets/css/Katies.css" rel="stylesheet" />
+    <link href="Content/sweetalert/sweet-alert.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -363,7 +363,7 @@
                     <div class="col-md-12">
                         <div class="m-title c-align">
                             <h2>Resume</h2>
-                            <h6>My education and experience</h6>
+                            <h6>Education & Experience Highlights</h6>
                         </div>
                     </div>
                 </div>
@@ -416,7 +416,7 @@
                             </li>
                             <div class="timeline-top"></div>
                         </ul>
-                        <div class="text-center"><a class="btn btn-lg btn-gray" target="_blank"><span>Download Resume</span></a></div>
+                        <div class="text-center"><a class="btn btn-lg btn-gray" ><span>Download Resume</span></a></div>
                     </div>
                 </div>
             </div>
@@ -573,7 +573,7 @@
                     <div class="col-md-12">
                         <div class="m-title c-align">
                             <h2>Let's Connect</h2>
-                            <h6>Drop me a line or email me at katieliz@gmail.com</h6>
+                            <h6>Fill out the form below or skip the hassle and email me directly at katieliz@gmail.com</h6>
                         </div>
                     </div>
                 </div>
@@ -633,9 +633,9 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-dialog">
                 <div class="modal-content">
-                                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
                     <div class="modal-body text-center">
                         <!--<div class="col text-center h3">Taco Cat Challenge</div>-->
                     </div>
@@ -645,8 +645,9 @@
                                 <img src="assets/images/tacocat_header800px.jpg" class="responsive" />
                             </div>
                             <br />
+                            <br />
                             <div class="col text-center h6">
-                                <h4>Enter a String to Reverse</h4>
+                                <h4>Enter a Word to find out if the word is a palindrome.</h4>
                                 <br />
                                 <input id="reverse">
                             </div>
@@ -664,7 +665,7 @@
                         </div>
                         <div class="row">
                             <div class="col text-center">
-                                <input type="checkbox" id="isPalindrome" />
+                                <!--<input type="checkbox" id="isPalindrome" />-->
                             </div>
                         </div>
 
@@ -680,49 +681,57 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    <span aria-hidden="true">x</span>
                 </button>
                 <div class="modal-body text-center">
 
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col text-center h3">Sunset Hills Challenge</div>
+                            <div class="col-12">
+                                <img src="assets/images/sunsethills_header800px.jpg" class="responsive" />
+                            </div>
+                            <br />
+                            <div class="col text-center h5">
+                                An array of buildings is facing the sun. Enter a
+                                height for each building from West to East. 
+                                Calculate to see what buildings can see the sun.
+                            </div>
                         </div>
                         <br />
 
-                        <div class="row h6">
+                        <div class="row">
                             <div class="col-2">
-                                <input id="building1" type="text" class="form-control" placeholder="Enter Building 1" />
+                                <input id="building1" type="text" class="form-control" placeholder="Height" />
                             </div>
                             <div class="col-2">
-                                <input id="building2" type="text" class="form-control" placeholder="Enter Building 2" />
+                                <input id="building2" type="text" class="form-control" placeholder="Height" />
                             </div>
                             <div class="col-2">
-                                <input id="building3" type="text" class="form-control" placeholder="Enter Building 3" />
+                                <input id="building3" type="text" class="form-control" placeholder="Height" />
                             </div>
                             <div class="col-2">
-                                <input id="building4" type="text" class="form-control" placeholder="Enter Building 4" />
+                                <input id="building4" type="text" class="form-control" placeholder="Height" />
                             </div>
                             <div class="col-2">
-                                <input id="building5" type="text" class="form-control" placeholder="Enter Building 5" />
+                                <input id="building5" type="text" class="form-control" placeholder="Height" />
                             </div>
                             <div class="col-2">
-                                <input id="building6" type="text" class="form-control" placeholder="Enter Building 6" />
+                                <input id="building6" type="text" class="form-control" placeholder="Height" />
                             </div>
                         </div>
                         <br />
 
                         <div class="row">
                             <div class="col">
-                                <div class="btn btn-gray" id="sunonbuildings">Calculate</div>
+                                <div class="btn btn-gray btn-block" id="sunonbuildings">Calculate</div>
                                 <label><span></span></label><br />
                             </div>
                             <div class="col">
-                                <div class="btn btn-gray" id="showBtn">See My Code</div>
+                                <div class="btn btn-gray btn-block" id="showBtn">Show Code</div>
                                 <label><span></span></label><br />
                             </div>
                             <div class="col">
-                                <div class="btn btn-gray" id="btnclearHills">Clear All</div>
+                                <div class="btn btn-gray btn-block" id="btnclearHills">Clear All</div>
                                 <label><span></span></label><br />
                                 <p id="clearCode"></p>
                             </div>
@@ -792,8 +801,8 @@ $('#btnShowHillscode").on("click", function (){
     <div class="modal module-gray modal fade" id="sumofAllFears">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <button type="button" class="close" type="button" data-dismiss="modal">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">x</span>
                 </button>
                 <div class="modal-body text-center">
 
@@ -815,7 +824,6 @@ $('#btnShowHillscode").on("click", function (){
                             <div class="col text-center h5">
                                 <label><span>ENTER A NUMBER for "K":  </span><input id="findSum" type="number" name="sum" value="17"></label>
                                 <label><span></span><input type="submit" onclick="displaySum()" value="Find It"></label>
-                                <label>
                             </div>
                         </div>
                         <div class="row">
@@ -826,7 +834,6 @@ $('#btnShowHillscode").on("click", function (){
                         <div class="row">
                             <div class="col text-center h5">
                                 <div id="numList">---</div>
-                                </label>
                             </div>
                         </div>
                         <div class="row">
@@ -839,6 +846,52 @@ $('#btnShowHillscode").on("click", function (){
                         <div class="row">
                             <div class="col text-center h5">
                                 <p id="results"></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="btn btn-gray" id="showBtnsum">See Code</div>
+                            <label><span></span></label><br />
+                        </div>
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <div id="sumCode">
+                                    <pre>
+                                        <code class="language-js">
+function findSum(numbers, answer) {
+
+
+let checkValue = 0;
+let found = false;
+//startIndex = 0, end Index =3
+for (let i = 0; i <= numbers.length - 2; i++) {
+///Loop over the array in the after the current value
+for (let y = (i + 1); y <= numbers.length - 1; y++) {
+if (answer == numbers[i] + numbers[y]) {
+found = true;
+return found;
+
+}
+}
+
+
+}
+return found;
+}
+
+function displaySum() {
+let answer = document.getElementById("findSum").value;
+let numArray = [10, 15, 3, 7];
+
+document.getElementById("numList").innerHTML = numArray.toString();
+let found = findSum(numArray, answer);
+document.getElementById("results").innerHTML = found.toString();
+
+}
+
+                                        </code>
+                                    </pre>
+                                </div>
                             </div>
                         </div>
 
@@ -854,7 +907,7 @@ $('#btnShowHillscode").on("click", function (){
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    <span aria-hidden="true">x</span>
                 </button>
                 <div class="modal-body text-center">
 
@@ -891,7 +944,7 @@ $('#btnShowHillscode").on("click", function (){
                         <div class="row">
                             <div class="col">
                                 <label><span>RESULTS:</span></label><br />
-                                <p id="FizzBuzzresults"></p>
+                                <p id="FizzBuzzresults" class="FizzBuzzresults"></p>
                             </div>
                         </div>
 
@@ -907,9 +960,11 @@ $('#btnShowHillscode").on("click", function (){
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script src="assets/js/sweetalert2.js"></script>
 
     <!-- Color Switcher (Remove these lines)-->
-    <script src="assets/js/style-switcher.min.js"></script>
+    <!--<script src="assets/js/style-switcher.min.js"></script>-->
     <script src="assets/js/ReverseString.js"></script>
     <script src="assets/js/SunsetHills.js"></script>
     <script src="assets/js/findSum.js"></script>

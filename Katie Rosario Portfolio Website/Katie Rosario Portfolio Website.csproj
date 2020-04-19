@@ -75,6 +75,7 @@
     <Content Include="assets\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets\bootstrap\js\bootstrap.js" />
     <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\css\sweetalert.css" />
     <Content Include="assets\images\bugtracker.jpg" />
     <Content Include="assets\css\animate.css" />
     <Content Include="assets\css\blueimp-gallery.min.css" />
@@ -262,6 +263,8 @@
     <Content Include="assets\js\style-switcher.min.js" />
     <Content Include="assets\js\submenu-fix.js" />
     <Content Include="assets\js\SunsetHills.js" />
+    <Content Include="assets\js\sweetalert.min.js" />
+    <Content Include="assets\js\sweetalert2.js" />
     <Content Include="assets\js\tilt.jquery.js" />
     <Content Include="assets\js\twitterFetcher.js" />
     <Content Include="assets\js\typed.js" />
@@ -271,6 +274,10 @@
     <Content Include="assets\video\video.mp4" />
     <Content Include="assets\video\video.ogv" />
     <Content Include="assets\video\video.webm" />
+    <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
+    <Content Include="Content\sweetalert\docs.css" />
+    <Content Include="Content\sweetalert\sweet-alert.css" />
+    <Content Include="Content\sweetalert\thumbs-up.jpg" />
     <Content Include="Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -307,6 +314,11 @@
     <Content Include="assets\images\icons_template.psd" />
     <Content Include="assets\images\Thumbs.db" />
     <Content Include="assets\images\Katie_Rosario_Resume_2018.pdf" />
+    <Content Include="Content\sweetalert\sweet-alert.less" />
+    <Content Include="Content\sweetalert\sweet-alert-combine.less" />
+    <Content Include="Content\sweetalert\sweet-alert-animations.less" />
+    <Content Include="Content\bootstrap\variables.less" />
+    <Content Include="Content\bootstrap\mixins.less" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\KatieRosarioPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">

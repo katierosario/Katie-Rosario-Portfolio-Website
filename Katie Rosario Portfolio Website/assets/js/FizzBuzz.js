@@ -5,10 +5,10 @@
             returnValue += '<span class="FizzBuzz">FizzBuzz </span>';
         }
         else if (i % value1 == 0) {
-            returnValue += 'Fizz ';
+            returnValue += '<span class="Fizz">Fizz </span>';
         }
         else if (i % value2 == 0) {
-            returnValue += 'Buzz ';
+            returnValue += '<span class="Buzz">Buzz </span>';
         }
         else {
             returnValue += i + ' ';

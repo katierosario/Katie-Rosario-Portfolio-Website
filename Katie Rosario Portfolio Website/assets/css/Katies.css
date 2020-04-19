@@ -1,13 +1,26 @@
 ﻿
 .Fizz {
     color: gray;
+    font-size: 20px;
+    font-family: Arial;
 }
 
 .Buzz {
     color: black;
+    font-size: 20px;
+    font-family: Courier New, Courier, monospace;
 }
 
 .FizzBuzz {
     color: darkslategray;
-    font: bold;
+    font: bolder;
+    font-size: 20px;
+    font-family: Georgia;
+}
+
+.FizzBuzzresults {
+    color: black;
+    font: bolder;
+    font-size: 20px;
+    font-family: Arial;
 }
