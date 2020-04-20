@@ -76,6 +76,9 @@
     <Content Include="assets\bootstrap\js\bootstrap.js" />
     <Content Include="assets\bootstrap\js\bootstrap.min.js" />
     <Content Include="assets\css\sweetalert.css" />
+    <Content Include="assets\images\apple-touch-icon-114x114.png" />
+    <Content Include="assets\images\apple-touch-icon-72x72.png" />
+    <Content Include="assets\images\apple-touch-icon.png" />
     <Content Include="assets\images\bugtracker.jpg" />
     <Content Include="assets\css\animate.css" />
     <Content Include="assets\css\blueimp-gallery.min.css" />
@@ -122,9 +125,6 @@
     <Content Include="assets\fonts\linea-arrows-10.svg" />
     <Content Include="assets\fonts\linea-basic-10.svg" />
     <Content Include="assets\fonts\themify.svg" />
-    <Content Include="assets\images\apple-touch-icon-114x114.png" />
-    <Content Include="assets\images\apple-touch-icon-72x72.png" />
-    <Content Include="assets\images\apple-touch-icon.png" />
     <Content Include="assets\images\avatar\1.jpg" />
     <Content Include="assets\images\avatar\2.jpg" />
     <Content Include="assets\images\avatar\3.jpg" />
@@ -235,6 +235,7 @@
     <Content Include="assets\images\widgets\9.jpg" />
     <Content Include="assets\images\work.png" />
     <Content Include="assets\js\appear.js" />
+    <Content Include="assets\js\Arrow.js" />
     <Content Include="assets\js\contact.js" />
     <Content Include="assets\js\custom.js" />
     <Content Include="assets\js\custom.min.js" />
@@ -313,12 +314,12 @@
     <Content Include="assets\fonts\themify.woff" />
     <Content Include="assets\images\icons_template.psd" />
     <Content Include="assets\images\Thumbs.db" />
-    <Content Include="assets\images\Katie_Rosario_Resume_2018.pdf" />
     <Content Include="Content\sweetalert\sweet-alert.less" />
     <Content Include="Content\sweetalert\sweet-alert-combine.less" />
     <Content Include="Content\sweetalert\sweet-alert-animations.less" />
     <Content Include="Content\bootstrap\variables.less" />
     <Content Include="Content\bootstrap\mixins.less" />
+    <Content Include="assets\images\Katie_Rosario_Resume_2020.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\KatieRosarioPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
