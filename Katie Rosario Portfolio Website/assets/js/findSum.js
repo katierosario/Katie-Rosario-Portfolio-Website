@@ -45,3 +45,15 @@ $(function () {
     //use jquery to hide the code block
     $("#sumCode").hide();
 });
+
+//if ("findSum" == true) {
+//    swal({
+//        title: "Yay the number you entered for K has numbers that add up to K!",
+//        icon: "success",
+//    });
+//} else {
+//    swal({
+//        title: "Sorry, no numbers add up to the value of K, try again?",
+//        icon: "error"
+//    });
+//}

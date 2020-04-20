@@ -25,3 +25,22 @@ function buzzIt() {
     output = FizzBuzzA(value1, value2);
     document.getElementById('FizzBuzzresults').innerHTML = output;
 }
+
+$("#showfizzbuzzBtn").on("click", function () {
+    $("#fizzBuzzCode").toggle();
+    if ($(this).text() == "Hide Code") {
+        $(this).text("Show Code");
+    } else {
+        $(this).text("Hide Code")
+    };
+});
+
+$(function () {
+    //use jquery to hide the code block
+    $("#fizzBuzzCode").hide();
+});
+
+$("#btnclearFizzBuzz").on("click", function () {
+    $("#FizzBuzzresults").html("");
+    $("#fizzBuzzCode").hide();
+});
