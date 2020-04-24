@@ -25,4 +25,14 @@
     font-family: Arial;
 }
 
+::-moz-selection {
+    background: rgba(207, 237, 223, .9);
+}
 
+::-webkit-selection {
+    background: rgba(207, 237, 223, .9);
+}
+
+::selection {
+    background: rgba(207, 237, 223, .9);
+}
