@@ -29,10 +29,191 @@
     background: rgba(207, 237, 223, .9);
 }
 
-::-webkit-selection {
+/*::.webkit-selection {
     background: rgba(207, 237, 223, .9);
-}
+}*/
 
 ::selection {
     background: rgba(207, 237, 223, .9);
+}
+
+
+/*------------------------------------------------------------------
+[codes grid]
+*/
+
+.row-codes .grid-sizer,
+.row-codes .codes-item {
+    width: 33.333333%;
+    padding: 20px;
+    float: left;
+}
+
+    .row-codes .grid-sizer.large,
+    .row-codes .codes-item.large {
+        width: 66.666666%;
+    }
+
+.row-codes[data-columns="4"] .grid-sizer,
+.row-codes[data-columns="4"] .codes-item {
+    width: 25%;
+}
+
+    .row-codes[data-columns="4"] .grid-sizer.large,
+    .row-codes[data-columns="4"] .codes-item.large {
+        width: 50%;
+    }
+
+/*------------------------------------------------------------------
+[codes Single Item]
+*/
+
+.codes-item {
+    float: left;
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+    .codes-item .codes-img-wrap {
+        background-size: cover;
+        background-position: 50%;
+        position: relative;
+        padding-top: 100%;
+        padding-bottom: 1px;
+    }
+
+    .codes-item.large .codes-img-wrap {
+        padding-bottom: 0;
+    }
+
+.codes-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+    .codes-wrapper .codes-img-wrap {
+        transition: all .3s cubic-bezier(.3, .1, .58, 1);
+    }
+
+.codes-overlay {
+    position: absolute;
+    background: rgba(30, 30, 30, .5);
+    opacity: 0;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all .3s cubic-bezier(.3, .1, .58, 1);
+}
+
+.codes-caption {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    opacity: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 20px 30px;
+    transition: all .3s cubic-bezier(.3, .1, .58, 1);
+}
+
+.codes-title {
+    letter-spacing: 3.8px;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 8px;
+}
+
+.codes-subtitle {
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    opacity: .7;
+}
+
+.codes-link {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.codes-item:hover .codes-wrapper {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+}
+
+.codes-item:hover .codes-overlay {
+    opacity: 1;
+}
+
+.codes-item:hover .codes-caption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+@media (max-width: 1199px) {
+    .row-codes .grid-sizer,
+    .row-codes .codes-item,
+    .row-codes[data-columns="4"] .grid-sizer,
+    .row-codes[data-columns="4"] .codes-item,
+    .row-codes[data-columns="5"] .grid-sizer,
+    .row-codes[data-columns="5"] .codes-item {
+        width: 33.333333%;
+    }
+
+        .row-codes .grid-sizer.large,
+        .row-codes .codes-item.large,
+        .row-codes[data-columns="4"] .grid-sizer.large,
+        .row-codes[data-columns="4"] .codes-item.large,
+        .row-codes[data-columns="5"] .grid-sizer.large,
+        .row-codes[data-columns="5"] .codes-item.large {
+            width: 66.666666%;
+        }
+}
+
+@media (max-width: 991px) {
+    .row-codes .grid-sizer,
+    .row-codes .codes-item,
+    .row-codes[data-columns="4"] .grid-sizer,
+    .row-codes[data-columns="4"] .codes-item,
+    .row-codes[data-columns="5"] .grid-sizer,
+    .row-codes[data-columns="5"] .codes-item {
+        width: 50%;
+    }
+
+        .row-codes .grid-sizer.large,
+        .row-codes .codes-item.large,
+        .row-codes[data-columns="4"] .grid-sizer.large,
+        .row-codes[data-columns="4"] .codes-item.large,
+        .row-codes[data-columns="5"] .grid-sizer.large,
+        .row-codes[data-columns="5"] .codes-item.large {
+            width: 100%;
+        }
+}
+
+@media (max-width: 767px) {
+    .row-codes .grid-sizer,
+    .row-codes .codes-item,
+    .row-codes[data-columns="4"] .grid-sizer,
+    .row-codes[data-columns="4"] .codes-item,
+    .row-codes[data-columns="5"] .grid-sizer,
+    .row-codes[data-columns="5"] .codes-item {
+        width: 100%;
+    }
+
+        .row-codes .grid-sizer.large,
+        .row-codes .codes-item.large,
+        .row-codes[data-columns="4"] .grid-sizer.large,
+        .row-codes[data-columns="4"] .codes-item.large,
+        .row-codes[data-columns="5"] .grid-sizer.large,
+        .row-codes[data-columns="5"] .codes-item.large {
+            width: 100%;
+        }
 }

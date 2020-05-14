@@ -79,6 +79,8 @@
     <Content Include="assets\images\apple-touch-icon-114x114.png" />
     <Content Include="assets\images\apple-touch-icon-72x72.png" />
     <Content Include="assets\images\apple-touch-icon.png" />
+    <Content Include="assets\images\Blog.jpg" />
+    <Content Include="assets\images\budget.jpg" />
     <Content Include="assets\images\bugtracker.jpg" />
     <Content Include="assets\css\animate.css" />
     <Content Include="assets\css\blueimp-gallery.min.css" />
@@ -136,11 +138,13 @@
     <Content Include="assets\images\blog\5.jpg" />
     <Content Include="assets\images\blog\6.jpg" />
     <Content Include="assets\images\blog\7.jpg" />
+    <Content Include="assets\images\BugTrackerThumb.jpg" />
     <Content Include="assets\images\clients\logo-1.png" />
     <Content Include="assets\images\clients\logo-2.png" />
     <Content Include="assets\images\clients\logo-3.png" />
     <Content Include="assets\images\clients\logo-4.png" />
     <Content Include="assets\images\close.png" />
+    <Content Include="assets\images\coder_foundry.jpg" />
     <Content Include="assets\images\codingchallenges\fizzbuzz_header800lgmodal.jpg" />
     <Content Include="assets\images\codingchallenges\g-1.jpg" />
     <Content Include="assets\images\codingchallenges\g-2.jpg" />
@@ -179,6 +183,7 @@
     <Content Include="assets\images\features\4.jpg" />
     <Content Include="assets\images\features\flagler.jpg" />
     <Content Include="assets\images\fizzbuzz_header800px.jpg" />
+    <Content Include="assets\images\juice_work.jpg" />
     <Content Include="assets\images\portfolio\balloons-39.jpg" />
     <Content Include="assets\images\portfolio\Brand_Identity.jpg" />
     <Content Include="assets\images\portfolio\g-1.jpg" />
