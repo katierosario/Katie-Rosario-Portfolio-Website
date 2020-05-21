@@ -37,6 +37,14 @@
     background: rgba(207, 237, 223, .9);
 }
 
+h4,
+.h4 {
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0 0 15px;
+    text-transform: none;
+}
+
 
 /*------------------------------------------------------------------
 [codes grid]
