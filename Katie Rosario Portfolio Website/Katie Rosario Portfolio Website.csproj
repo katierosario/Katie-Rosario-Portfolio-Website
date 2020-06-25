@@ -81,6 +81,8 @@
     <Content Include="assets\images\apple-touch-icon.png" />
     <Content Include="assets\images\Blog.jpg" />
     <Content Include="assets\images\budget.jpg" />
+    <Content Include="assets\images\budget1.jpg" />
+    <Content Include="assets\images\budget_api.jpg" />
     <Content Include="assets\images\bugtracker.jpg" />
     <Content Include="assets\css\animate.css" />
     <Content Include="assets\css\blueimp-gallery.min.css" />
@@ -339,6 +341,7 @@
     <Content Include="Content\bootstrap\variables.less" />
     <Content Include="Content\bootstrap\mixins.less" />
     <Content Include="assets\images\Katie_Rosario_Resume_2020.pdf" />
+    <Content Include="assets\images\Katie Rosario %282%29.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\KatieRosarioPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
